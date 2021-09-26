@@ -3,22 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="styleshhet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Cash Register</title>
+    
 </head>
 <body>
     <nav>
         <div class="nav-title">Cash Register</div>
     </nav>
     <main>
-        <textarea id="txt-input"></textarea>
-        <button id="btn-translate">Check</button>
-        <div>Return Change</div>
-        <div id="output"></div>
+        <div class="input-sec">
+            <label for="bill-input">Enter bill amount</label>
+            <input type="text" name="bill-input" id="bill-input">
+            <label for="cash-input">Cash Given</label>
+            <input type="text" name="cash-input" id="cash-input">
+            <button id="btn-check">Check</button>
+            <div class="error-handler"></div>
+        </div>
+        
+        <table class="change-table">
+            <caption>Return Change</caption>
+            <tr>
+                <th>No. of Notes</th>
+                <td class="number"></td>
+                <td class="number"></td>
+                <td class="number"></td>
+                <td class="number"></td>
+                <td class="number"></td>
+                <td class="number"></td>
+                <td class="number"></td>
+            </tr>
+
+            <tr>
+                <th>Note</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+        </table>
     </main>
     <footer>
         <div class="footer-head">about</div>
         <p></p>
     </footer>
 </body>
+<script src="app.js"></script>
 </html>

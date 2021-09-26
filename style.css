@@ -33,8 +33,9 @@ textarea {
 button {
     background-color: var(--primary);
     border: none;
-    margin: 1rem 0rem;
+    margin: 1rem auto;
     padding: 1rem 2rem;
+    border-radius: 18px;
     font-family: 'Roboto', cursive;
     font-size: large;
 }
@@ -58,4 +59,23 @@ footer {
 footer p {
     max-width: var(--width-break);
     margin: auto;
+}
+th, td {
+    border: 2px solid var(--primary);
+    width: 0%;
+    border-collapse: collapse;
+    padding: 0.4rem;
+}
+.change-table {
+    width: 50%;
+    text-align: justify;
+    border-collapse: collapse;
+    margin: auto;
+}
+.input-sec{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto;
 }
